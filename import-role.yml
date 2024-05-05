@@ -2,8 +2,8 @@
 - hosts: localhost
   connection: local
   gather_facts: false
-  roles:
-  - role: demo/primary
   tasks:
+  - import_role:
+      name: initialize
   - debug:
       msg: playbook done

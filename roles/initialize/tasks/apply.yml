@@ -1,9 +1,9 @@
 ---
 - set_fact:
-    primary_called: true
+    initialized: true
 
 - include_role:
-    name: demo/role_a
+    name: role_a
 
 - fail:
     msg: "THIS SHOULD TRIGGER"

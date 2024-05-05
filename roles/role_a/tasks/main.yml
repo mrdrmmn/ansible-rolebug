@@ -1,3 +1,5 @@
 ---
 - debug:
+    var: initialized
+- debug:
     msg: "{{ role_name }} done"

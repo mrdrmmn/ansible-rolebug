@@ -1,7 +1,7 @@
 ---
 - include_tasks:
     file: apply.yml
-  when: not(primary_called | default(false))
+  when: not(initialized | default(false))
 
 - debug:
     msg: "{{ role_name }} done"
