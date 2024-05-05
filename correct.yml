@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+  - include_role:
+      name: demo/primary
+  - debug:
+      msg: playbook done

@@ -1,0 +1,9 @@
+---
+- set_fact:
+    primary_called: true
+
+- include_role:
+    name: demo/role_a
+
+- fail:
+    msg: "THIS SHOULD TRIGGER"
